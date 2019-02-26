@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <style>
+            .bulbon{
+                margin-left:600px;
+                margin-top:300px;
+            }
+            #rectangle{
+                margin-top:100px;
+            }
+
+        </style>
+        <div class="bulbon">
+        <div id="rectangle"></div>
+        <button onclick="on()">blub onn</button>
+        <button onclick="off()">blub off</button>
+    </div>
+
+    </body>
+    <script>
+        var rect = document.getElementById('rectangle');
+            function on()
+            {
+                rect.innerHTML="<img src='bulb-on.png'>";
+            }
+            function off()
+            {
+                rect.innerHTML="<img src='bulb-off.png'>";
+            }
+    </script>
+</html>
